@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
-    logger.info("### Webhook called here ###")
+    logger.info("### Webhook called ###")
     req = request.get_json(silent=True, force=True)
     cur = req['result']['parameters']
     k = getINR(cur['currency-name'])
