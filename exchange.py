@@ -84,7 +84,7 @@ def formresponse(k):
     data['speech'] = d
     data['displayText'] = d
     data['data'] = ''
-    data['contextOut'] = ''
+    #data['contextOut'] = ''
     data['source'] = 'TPYBOT'
     jsondata = json.dumps(data)
     final = make_response(jsondata)
